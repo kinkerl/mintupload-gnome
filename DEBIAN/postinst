@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_gconf
+if [ "$1" = "configure" ]; then
+	gconf-schemas --register mintUpload.schemas
+fi
+# End automatically added section

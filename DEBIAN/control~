@@ -1,0 +1,10 @@
+Source: mintupload-gnome
+Version: 0.9
+Section: admin
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Package: mintupload-gnome
+Architecture: all
+Depends: nautilus-actions, mintupload
+Description: Nautilus integration for mintUpload
+ Uses nautilus-actions to integrate mintUpload in nautilus.
