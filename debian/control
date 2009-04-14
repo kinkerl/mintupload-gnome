@@ -1,5 +1,5 @@
 Source: mintupload-gnome
-Section: unknown
+Section: admin
 Priority: extra
 Maintainer: Dennis Schwertel <s@digitalkultur.net>
 Build-Depends: debhelper (>= 5)
@@ -7,6 +7,6 @@ Standards-Version: 3.7.2
 
 Package: mintupload-gnome
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, nautilus-actions, mintupload
+Depends: nautilus-actions, mintupload
 Description: Nautilus integration for mintupload
  uses nautilus-actions
