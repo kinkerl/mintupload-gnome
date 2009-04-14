@@ -1,0 +1,17 @@
+This package was debianized by Dennis Schwertel <s@digitalkultur.net> on
+Tue, 14 Apr 2009 13:17:15 +0200.
+
+Copyright: 
+
+    <Copyright (C) YYYY Name OfAuthor>
+    <likewise for another author>
+
+License:
+
+    <Put the license of the package here indented by 4 spaces>
+
+The Debian packaging is (C) 2009, kinkerl <s@digitalkultur.net> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+
+# Please also look if there are files or directories which have a
+# different copyright/license attached and list them here.

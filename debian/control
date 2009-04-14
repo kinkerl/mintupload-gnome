@@ -1,10 +1,12 @@
 Source: mintupload-gnome
-Version: 0.9
-Section: admin
-Priority: optional
+Section: unknown
+Priority: extra
 Maintainer: Dennis Schwertel <s@digitalkultur.net>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
 Package: mintupload-gnome
-Architecture: all
-Depends: nautilus-actions, mintupload
-Description: Nautilus integration for mintUpload
- Uses nautilus-actions to integrate mintUpload in nautilus.
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, nautilus-actions, mintupload
+Description: Nautilus integration for mintupload
+ uses nautilus-actions
