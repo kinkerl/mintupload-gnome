@@ -2,87 +2,87 @@
 <gconfschemafile>
   <schemalist>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/label</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/label</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/label</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/label</applyto>
       <owner>nautilus-actions</owner>
       <type>string</type>
       <locale name="C">
         <default>Upload</default>
-        <short>Die Bezeichnung des Menüeintrags</short>
-        <long>Der Name einer Aktion, die im Nautilus-Kontextmenü erscheint, wenn die eingestellten Auswahlfilter zutreffen.</long>
+        <short>The label of the menu item</short>
+        <long>The label of the menu item that will appear in the Nautilus popup menu when the selection matches the appearance condition settings</long>
       </locale>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/tooltip</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/tooltip</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/tooltip</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/tooltip</applyto>
       <owner>nautilus-actions</owner>
       <type>string</type>
       <locale name="C">
-        <default></default>
-        <short>Der Kurztipp des Menüeintrages</short>
-        <long>Der Kurztipp der in der Nautilus-Statusleiste angezeigt wird, wenn der Benutzer mit der Maus über den Eintrag im Nautilus-Kontextmenü fährt</long>
+        <default>Upload to the Internet to share it easily</default>
+        <short>The tooltip of the menu item</short>
+        <long>The tooltip of the menu item that will appear in the Nautilus statusbar when the user points to the Nautilus popup menu item with his/her mouse</long>
       </locale>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/icon</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/icon</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/icon</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/icon</applyto>
       <owner>nautilus-actions</owner>
       <type>string</type>
       <locale name="C">
-        <short>Das Symbol vor dem Menüeintrag</short>
-        <long>Das zugehörige Menüsymbol einer Aktion, die im Nautilus-Kontextmenü erscheint, wenn die eingestellten Auswahlfilter zutreffen</long>
+        <short>The icon of the menu item</short>
+        <long>The icon of the menu item that will appear next to the label in the Nautilus popup menu when the selection matches the appearance conditions settings</long>
       </locale>
       <default>gtk-sort-ascending</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/path</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/path</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/path</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/path</applyto>
       <owner>nautilus-actions</owner>
       <type>string</type>
       <locale name="C">
-        <short>Der Pfad des Befehls</short>
-        <long>Der vollständige Dateisystempfad des auszuführenden Befehls, wenn der Benutzer auf den Eintrag im Nautilus-Kontextmenü klickt</long>
+        <short>The path of the command</short>
+        <long>The path of the command to start when the user select the menu item in the Nautilus popup menu</long>
       </locale>
       <default>/usr/lib/linuxmint/mintUpload/mintUpload.py</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/parameters</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/parameters</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/parameters</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/parameters</applyto>
       <owner>nautilus-actions</owner>
       <type>string</type>
       <locale name="C">
-        <short>Die Kommandoparameter</short>
-        <long>Die Kommandoparameter des Befehls, wenn der Benutzer den Eintrag im Nautilus-Kontextmenü auswählt.
+        <short>The parameters of the command</short>
+        <long>The parameters of the command to start when the user selects the menu item in the Nautilus popup menu.
 
-Die Parameter können verschiedene Sonderzeichen enthalten, die von Nautilus vor dem Kommandostart  durch die entsprechenden Informationen ersetzt werden:
+The parameters can contain some special tokens which are replaced by Nautilus information before starting the command:
 
-%d: Basisordner der ausgewählten Dateien
-%f: Name der ausgewählten Datei oder der ersten Datei bei mehreren Dateien
-%m: Durch Leerzeichen getrennte Basisordner der ausgewählten Dateien und Ordner
-%M: Durch Leerzeichen getrennte Basisordner der ausgewählten Dateien und Ordner mit vollständigen Pfaden
-%u: Vollständige GnomeVFS-Adresse
-%s: Schema der Gnome-VFS-Adresse
-%h: Rechnername der GnomeVFS-Adresse
-%U: Benutzername der GnomeVFS-Adresse
-%%: Einfaches Prozentzeichen</long>
+%d: base folder of the selected file(s)
+%f: the name of the selected file or the first one if many are selected
+%m: space-separated list of the basenames of the selected file(s)/folder(s)
+%M: space-separated list of the selected file(s)/folder(s), with their full paths
+%u: GnomeVFS URI
+%s: scheme of the GnomeVFS URI
+%h: hostname of the GnomeVFS URI
+%U: username of the :%s/GnomeVFS URI
+%%: a percent sign</long>
       </locale>
-      <default>%d/%f</default>
+      <default>%d/%f </default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/basenames</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/basenames</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/basenames</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/basenames</applyto>
       <owner>nautilus-actions</owner>
       <type>list</type>
       <list_type>string</list_type>
       <locale name="C">
-        <short>Die Liste der Muster, die auf die ausgewählten Dateien und Ordner zutreffen müssen</short>
+        <short>The list of pattern to match the selected file(s)/folder(s)</short>
         <long>A list of strings with joker '*' or '?' to match the name of the selected file(s)/folder(s). Each selected items must match at least one of the filename patterns for the action to appear</long>
       </locale>
       <default>[*]</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/matchcase</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/matchcase</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/matchcase</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/matchcase</applyto>
       <owner>nautilus-actions</owner>
       <type>bool</type>
       <locale name="C">
@@ -92,8 +92,8 @@ Die Parameter können verschiedene Sonderzeichen enthalten, die von Nautilus vor
       <default>true</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/mimetypes</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/mimetypes</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/mimetypes</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/mimetypes</applyto>
       <owner>nautilus-actions</owner>
       <type>list</type>
       <list_type>string</list_type>
@@ -104,12 +104,12 @@ Die Parameter können verschiedene Sonderzeichen enthalten, die von Nautilus vor
       <default>[*/*]</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/isfile</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/isfile</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/isfile</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/isfile</applyto>
       <owner>nautilus-actions</owner>
       <type>bool</type>
       <locale name="C">
-        <short>»true« wenn die Auswahl Dateien enthalten darf, andernfalls »false«</short>
+        <short>'true' if the selection can have files, 'false' otherwise</short>
         <long>This setting is tied in with the 'isdir' setting. The valid combinations are:
 
 isfile=TRUE and isdir=FALSE: the selection may hold only files
@@ -120,12 +120,12 @@ isfile=FALSE and isdir=FALSE: this is an invalid combination (your configuration
       <default>true</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/isdir</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/isdir</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/isdir</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/isdir</applyto>
       <owner>nautilus-actions</owner>
       <type>bool</type>
       <locale name="C">
-        <short>»true« wenn die Auswahl Ordner enthalten darf, anderenfalls »false«</short>
+        <short>'true' if the selection can have folders, 'false' otherwise</short>
         <long>This setting is tied in with the 'isfile' setting. The valid combinations are:
 
 isfile=TRUE and isdir=FALSE: the selection may hold only files
@@ -136,49 +136,50 @@ isfile=FALSE and isdir=FALSE: this is an invalid combination (your configuration
       <default>false</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/accept-multiple-files</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/accept-multiple-files</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/accept-multiple-files</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/accept-multiple-files</applyto>
       <owner>nautilus-actions</owner>
       <type>bool</type>
       <locale name="C">
-        <short>»true« falls die Auswahl mehrere Elemente enthalten kann, andernfalls »false«</short>
-        <long>Wenn ein oder mehrere Dateien oder Ordner ausgewählt werden darf, dann setzen Sie diesen Schlüssel auf »true«. Andernfalls auf »false«</long>
+        <short>'true' if the selection can have several items, 'false' otherwise</short>
+        <long>If you need one or more files or folders to be selected, set this key to 'true'. If you want just one file or folder, set 'false'</long>
       </locale>
       <default>false</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/schemes</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/schemes</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/schemes</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/schemes</applyto>
       <owner>nautilus-actions</owner>
       <type>list</type>
       <list_type>string</list_type>
       <locale name="C">
-        <short>Die Liste der GnomeVFS-Schemata unter denen sich die Dateien befinden dürfen</short>
-        <long>Legt die Liste der gültigen GnomeVFS-Schemata fest, die auf die markierten Elemente zutreffen. Das GnomeVFS-Schema ist das Protokoll mit dem auf die Dateien zugegriffen wird. Das zu verwendente Schlüsselwort ist das aus der GnomeVFS-Adresse.
+        <short>The list of GnomeVFS schemes where the selected files should be located</short>
+        <long>Defines the list of valid GnomeVFS schemes to be matched against the selected items. The GnomeVFS scheme is the protocol used to access the files. The keyword to use is the one used in the GnomeVFS URI.
 
-Beispiele für GnomeVFS-Adressen sind:
-file:///tmp/bla.txt
-sftp:///root@test.beispiel.net/tmp/bla.txt
+Examples of GnomeVFS URI include: 
+file:///tmp/foo.txt
+sftp:///root@test.example.net/tmp/foo.txt
 
-Die verbreitetsten Schemata sind:
-»file« für lokale Dateien
-»sftp« für den Zugriff über SSH
-»ftp« für den Zugriff per FTP
-»smb« für Zugriff auf Windows-Datei-Server über Samba
-»dav« für Dateizugriff über WebDAV
+The most common schemes are:
 
-Alle von Nautilus verwendeten GnomeVFS-Schemen können hier verwendet werden.</long>
+'file': local files
+'sftp': files accessed via SSH
+'ftp': files accessed via FTP
+'smb': files accessed via Samba (Windows share)
+'dav': files accessed via WebDav
+
+All GnomeVFS schemes used by Nautilus can be used here.</long>
       </locale>
       <default>[file]</default>
     </schema>
     <schema>
-      <key>/schemas/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/version</key>
-      <applyto>/apps/nautilus-actions/configurations/7d03628b-47ab-427c-9e42-d9b5e7215897/version</applyto>
+      <key>/schemas/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/version</key>
+      <applyto>/apps/nautilus-actions/configurations/f510b586-3c37-4025-9e97-5781857e901f/version</applyto>
       <owner>nautilus-actions</owner>
       <type>string</type>
       <locale name="C">
-        <short>Die Version des Konfigurationsformates</short>
-        <long>Die verwendete Version des Konfigurationsformates um Abwärtskompatibilität zu ermöglichen</long>
+        <short>The version of the configuration format</short>
+        <long>The version of the configuration format that will be used to manage backward compatibility</long>
       </locale>
       <default>1.1</default>
     </schema>
