@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.2
 
 Package: mintupload-gnome
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, nautilus-actions, mintupload
 Description: Nautilus integration for mintupload
  uses nautilus-actions
